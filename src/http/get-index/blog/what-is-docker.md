@@ -1,13 +1,13 @@
 @title|What Docker Is
 @created|20150423
 
-![slide1](/images/what_docker_is_slide1.png)
+![slide1](/_static/what_docker_is_slide1.png)
 
 _This is the first post of a 3-part series on docker. This series was transformed from a talk I gave at an STL DevOps meetup._
 
 Let’s take a moment, really quick, to bring everyone up to speed on what docker is. If you already understand what docker is — and why it is so great — feel free to skip ahead to the [next article](/2015/04/24/How-Docker-Changes-Things.html).
 
-![slide2](/images/what_docker_is_slide2.png)
+![slide2](/_static/what_docker_is_slide2.png)
 
 Docker started as an api on top of [Linux Containers](https://linuxcontainers.org/). It has grown to be a tool set and ecosystem for packaging and distributing applications. It’s api is built to be pluggable allowing the underlying technologies to be exchanged without any apparent changes to the end user.
 
@@ -17,7 +17,7 @@ For a much higher level explanation of why docker is fantastic check out [Solomo
 
 <iframe style="margin-left:50px" width="560" height="315" src="https://www.youtube.com/embed/3N3n9FzebAA" frameborder="0" allowfullscreen></iframe>
 
-![slide3](/images/what_docker_is_slide3.png)
+![slide3](/_static/what_docker_is_slide3.png)
 
 Now that we are starting to understand the power of docker as a shipping tool, let’s take a minute to see just how efficient docker is. We are going to create a script called `gimmick.sh` which will accept an integer as a parameter.
 

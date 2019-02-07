@@ -1,13 +1,13 @@
 @title|How Docker Changes Things
 @created|20150424
 
-![slide1](/images/docker_changes_things_slide1.png)
+![slide1](/_static/docker_changes_things_slide1.png)
 
 _This is the second post of a 3-part series on docker. This series was transformed from a talk I gave at an STL DevOps meetup._
 
 We are going to talk about “owning the stack” via [docker](https://www.docker.com/), and what that means to us as developers. If this post is successful, you will understand the full meaning and depth of that statement by the time you are done reading this. For a quick primer on what docker is, and why it is fantastic, check out the precursor to this blog post [here](http://127.0.0.1:4000/2015/04/23/What-Is-Docker.html).
 
-![slide2](/images/docker_changes_things_slide2.png)
+![slide2](/_static/docker_changes_things_slide2.png)
 
 Often, when we hear people [talk](http://opensource.com/resources/what-docker) [about](http://searchenterpriselinux.techtarget.com/definition/Docker) [docker](http://stackoverflow.com/questions/16047306/how-is-docker-io-different-from-a-normal-virtual-machine) [being](http://www.zdnet.com/article/what-is-docker-and-why-is-it-so-darn-popular/) [awesome](http://www.centurylinklabs.com/what-is-docker-and-when-to-use-it/), these four bullet points are the reasons they cite.
 
@@ -19,17 +19,17 @@ Docker also has insanely fast — can be sub-second — spin up times co
 Finally, the [Layered File Systems](https://docs.docker.com/terms/layer/) that docker uses allows docker clients to pull only the changes to a docker image when an update occurs. Compared to downloading an updated virtual disk image for a VM, this saves a considerable amount of time and network resources.
 For a deep comparison of native vs. docker vs. virtualization, check out this [awesome paper from IBM](http://domino.research.ibm.com/library/cyberdig.nsf/papers/0929052195DD819C85257D2300681E7B/$File/rc25482.pdf).
 
-![slide3](/images/docker_changes_things_slide3.png)
+![slide3](/_static/docker_changes_things_slide3.png)
 
 Yes, there are many technical reasons why docker is great, but they all fall short of the true change docker is bringing to our industry. Docker’s promise is more than just deploying and updating vast quantities of images quickly, it's a philosophical stance on how deploying our applications should look and where responsibility lies in that deployment process. It is a true paradigm shift that will fundamentally change the way we approach developing modern applications.
 
-![slide4](/images/docker_changes_things_slide4.png)
+![slide4](/_static/docker_changes_things_slide4.png)
 
 Solomon Hykes has spoken at lengths to this, but nearly every review of docker fails to state this. Docker promises to transform server side programming in the same way that web browsers transformed client side programming. A docker container can run on any machine running docker, and any machine running docker can run any docker container. Windows, Mac, Ubuntu, Debian, Fedora, the [list goes on](https://docs.docker.com/installation/#installation), these are all capable of deploying applications in the same exact way with the same exact results. This means that the process of deploying on these operating systems is not only exactly the same, but that if the application runs on one of them it will run on all of them. Deploying to your laptop is exactly the same as deploying in production, and if it works on your laptop it will work in production.
 
 This is a two-way street. An application can be shipped to production from a developer the same way that it can be shipped to a developer from production. If you are a new developer on a team, getting a production environment running on your laptop is now as simple as running a docker compose file. Your CI server can run tests on top of the same exact container(s) and configuration that will be deployed into production. The list of benefits that come with a fully portable container goes on and on. This will fundamentally change the way we look at shipping code.
 
-![slide5](/images/docker_changes_things_slide5.png)
+![slide5](/_static/docker_changes_things_slide5.png)
 
 The “Stack as a Dependency” is the biggest philosophical shift that docker brings with it. When we as developers break ground on our applications, we make a lot of assumptions about the environment those applications will run in. Our development environment becomes an implicit dependency for our application, and we often fail to appreciate that fact.
 
