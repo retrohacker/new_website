@@ -1,4 +1,5 @@
 var blog = require('./blog')
+var fs = require('fs')
 var template = fs.readFileSync('./template.html', 'utf8')
 var months = {
   '01': 'January',

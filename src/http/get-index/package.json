@@ -1,5 +1,5 @@
 {
-  "name": "website-get-000file",
+  "name": "website-get",
   "dependencies": {
     "@architect/data": "^2.0.13",
     "@architect/functions": "^2.0.4",

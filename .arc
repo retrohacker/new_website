@@ -1,8 +1,10 @@
 @app
 website
 
-@http
+@domain
+blankenship.io
 
+@http
 get /
 
 @static
