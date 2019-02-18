@@ -1,4 +1,5 @@
 var blog = require('./blog')
+var util = require('util')
 var fs = require('fs')
 var template = fs.readFileSync('./template.html', 'utf8')
 var months = {
@@ -17,9 +18,16 @@ var months = {
 }
 
 exports.handler = async function http(req) {
-  //console.log(req)
-  //console.log(Object.keys(blog))
-  return await router(req.path)
+  console.log(req)
+  console.log(Object.keys(blog))
+  try {
+    return router(req.path)
+  } catch(e) {
+    return {
+      status: 500,
+      body: util.inspect(e)
+    }
+  }
 }
 
 function sortPosts(posts) {
@@ -28,40 +36,44 @@ function sortPosts(posts) {
     .reverse()
 }
 
-async function router(path) {
+function router(path) {
   const isHome = /^\/home\/?$/
   const isYear = /^\/date\/([0-9]{4})\/?$/
   const isMonth = /^\/date\/([0-9]{4})\/([0-9]{2})\/?$/
   const isFile = /^\/file\/(.*)$/
 
   if(isHome.test(path)) {
-    return await renderHome(...isHome.exec(path).slice(1));
+    return renderHome(...isHome.exec(path).slice(1));
   }
 
   if(isYear.test(path)) {
-    return await renderYear(...isYear.exec(path).slice(1));
+    return renderYear(...isYear.exec(path).slice(1));
   }
 
   if(isMonth.test(path)) {
-    return await renderMonth(...isMonth.exec(path).slice(1));
+    return renderMonth(...isMonth.exec(path).slice(1));
   }
 
   if(isFile.test(path)) {
-    return await renderFile(...isFile.exec(path).slice(1));
+    return renderFile(...isFile.exec(path).slice(1));
   }
 
-  return await render404();
+  return render404();
 }
 
-async function renderHome() {
+function renderHome() {
+  console.log('Sorting posts')
   var posts = sortPosts(Object.values(blog))
+  console.log('Building navbar')
   let nav = '<li><a href="/home">Home</a></li>'
+  console.log('Building filter')
   let filter = posts
     .map((v) => Number(v['@created'].substring(0,4)))
     .reduce((a, c) => a.indexOf(c) >= 0 ? a : a.concat([c]), [])
     .sort((a, b) => b - a)
     .map((v) => `<a href="/date/${v}">${v}</a>`)
   let content = `<div class="filter">Filter: ${filter.join('')}</div>`
+  console.log('Populating posts')
   for(var i = 0; i < 100 && i < posts.length; i++) {
     const post = posts[i]
     content += '<div class="post">'
@@ -71,6 +83,7 @@ async function renderHome() {
     content += post.preview
     content += '</div>'
   }
+  console.log('Sending back payload')
   return {
     type: 'text/html; charset=utf8',
     body: template
@@ -79,7 +92,7 @@ async function renderHome() {
   }
 }
 
-async function renderYear(year) {
+function renderYear(year) {
   var posts = sortPosts(
     Object.values(blog).filter((v) => v['@created'].startsWith(year))
   )
@@ -110,7 +123,7 @@ async function renderYear(year) {
   }
 }
 
-async function renderMonth(year, month) {
+function renderMonth(year, month) {
   var posts = sortPosts(Object.values(blog)
     .filter((v) => v['@created'].startsWith(year + month)))
   let nav = '<li><a href="/home">Home</a></li>'
@@ -135,7 +148,7 @@ async function renderMonth(year, month) {
   }
 }
 
-async function renderFile(filename) {
+function renderFile(filename) {
   const file = blog[filename]
 
   if(!file) {
@@ -165,7 +178,7 @@ async function renderFile(filename) {
   }
 }
 
-async function render404() {
+function render404() {
   return {
     status: 404,
     type: 'text/html; charset=utf8',
