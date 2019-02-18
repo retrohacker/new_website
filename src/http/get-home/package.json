@@ -1,5 +1,5 @@
 {
-  "name": "website-get-index",
+  "name": "website-get-home",
   "dependencies": {
     "@architect/data": "^2.0.14",
     "@architect/functions": "^2.0.7",
