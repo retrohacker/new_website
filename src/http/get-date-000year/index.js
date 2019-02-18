@@ -13,7 +13,7 @@ exports.handler = async function http(req) {
   )
   console.log(`Sorted posts`)
 
-  let nav = '<li><a href="/home">Home</a></li>'
+  let nav = '<li><a href="/">Home</a></li>'
   nav += `<li><a href="/date/${year}">${year}</a></li>`
   console.log('Built navbar', {nav})
 

@@ -23,7 +23,7 @@ exports.handler = async function http(req) {
   const year = file['@created'].substring(0,4);
   const month = file['@created'].substring(4,6);
   const title = file['@title'];
-  let nav = '<li><a href="/home">Home</a></li>'
+  let nav = '<li><a href="/">Home</a></li>'
   nav += `<li><a href="/date/${year}">${year}</a></li>`
   nav += `<li><a href="/date/${year}/${month}">${months[month]}</a></li>`
   nav += `<li>${title}</li>`

@@ -1,9 +1,0 @@
-{
-  "name": "website-get-home",
-  "dependencies": {
-    "@architect/data": "^2.0.14",
-    "@architect/functions": "^2.0.7",
-    "glob": "^7.1.3",
-    "markdown-it": "^8.4.2"
-  }
-}

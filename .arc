@@ -6,7 +6,6 @@ blankenship.io
 
 @http
 get /
-get /home
 get /date/:year
 get /date/:year/:month
 get /file/:file

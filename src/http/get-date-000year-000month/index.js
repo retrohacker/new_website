@@ -11,7 +11,7 @@ exports.handler = async function http(req) {
     .filter((v) => v['@created'].startsWith(year + month)))
   console.log(`Sorted posts`)
 
-  let nav = '<li><a href="/home">Home</a></li>'
+  let nav = '<li><a href="/">Home</a></li>'
   nav += `<li><a href="/date/${year}">${year}</a></li>`
   nav += `<li>${months[month]}</li>`
   console.log('Built navbar', {nav})
