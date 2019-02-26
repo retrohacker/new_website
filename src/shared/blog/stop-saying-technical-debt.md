@@ -68,9 +68,9 @@ Instead of calling this “technical debt” and asking for time to work on it, 
 
 ## Availability Play
 
-Problems that are difficult to debug, scheduled maintenance, outages nobody notices - these impact your product’s user experience. This can be measured by its impact to the user experience, user retention, and revenue.
+Problems that are difficult to debug, scheduled maintenance, outages you learn about through twitier - these impact your product’s user experience. This can be measured by its impact to the user experience, user retention, and revenue.
 
-In addition, if your team is constantly fire-fighting, which is taking time away from feature work. The value of the availability wins you unlock, and the time freed up to focus on feature work, should justify the upfront investment for this work.
+In addition, if your team is constantly fire-fighting, it is taking time away from feature work. The value of the availability wins you unlock, and the time freed up to focus on feature work, should justify the upfront investment for this work.
 
 Instead of calling this “technical debt” and asking for time to work on it, try something like:
 
