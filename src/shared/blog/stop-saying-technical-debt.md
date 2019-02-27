@@ -15,10 +15,10 @@ The word “debt” carries with it a ton of cruft that has no business being in
 
 Let’s look at the definition of debt:
 
-1 : SIN, TRESPASS
-2 : something owed : OBLIGATION
-3 : a state of being under obligation to pay or repay someone or something in return for something received : a state of owing
-4 law, business : the common-law action for the recovery of money held to be due
+> 1 : SIN, TRESPASS
+> 2 : something owed : OBLIGATION
+> 3 : a state of being under obligation to pay or repay someone or something in return for something received : a state of owing
+> 4 law, business : the common-law action for the recovery of money held to be due
 
 The first definition implies that you’ve done something wrong, and you must account for your transgressions. But who have you transgressed? The company? The product? The users?
 
@@ -38,7 +38,7 @@ Unlike the average American’s pile of credit card debt, technical debt is incr
 
 > “We don’t use [trendy new thing], tech debt!”
 
-Engineering work is an investment, and there should be a return on that investment. The phrase “technical debt” is all about the investment. Instead use phrases that are about the return!
+Engineering work is an investment, and there should be a return on that investment. The phrase “technical debt” is all about the investment. Instead, use phrases that are about the return!
 
 ## Technical Debt Doesn’t Get Done
 
@@ -68,17 +68,17 @@ Instead of calling this “technical debt” and asking for time to work on it, 
 
 ## Availability Play
 
-Problems that are difficult to debug, scheduled maintenance, outages you learn about through twitier - these impact your product’s user experience. This can be measured by its impact to the user experience, user retention, and revenue.
+Problems that are difficult to debug, scheduled maintenance, outages you learn about through twitier - these impact your product’s user experience. This can be measured by its impact on the user experience, user retention, and revenue.
 
 In addition, if your team is constantly fire-fighting, it is taking time away from feature work. The value of the availability wins you unlock, and the time freed up to focus on feature work, should justify the upfront investment for this work.
 
 Instead of calling this “technical debt” and asking for time to work on it, try something like:
 
-> “Our team is constantly putting out fires in production. We are struggling to stay on top of incidents, let alone make any meaningful progress on product innovation. Give us a quarter to address this. In that time, we can improve the overall user experience and free up our time to focus on product.”
+> “Our team is constantly putting out fires in production. We are struggling to stay on top of incidents, let alone make any meaningful progress on product innovation. Give us a quarter to address this. In that time, we can improve the overall user experience and free up our time to focus on the product.”
 
 ## Mental Health and Quality of Life Play
 
-Noisy pagers with lots of false positives, constant support requests, poor feedback loops, ancient technology - sometimes working on a system just makes life shitty. This can’t always be directly measured, but the effects absolutely can. The sentiment of your team, constantly hearing “I need a vacation,” people quitting, the inability to hire, these are all great indicators that something needs to change. Not to mention, if you are building a culture of trust, investing in improving the quality of life for your team is an excellent way to show that your organization truly cares.
+Noisy pagers with lots of false positives, constant support requests, poor feedback loops, ancient technology - sometimes working on a system just makes life shitty. This can’t always be directly measured, but the effects absolutely can. The sentiment of your team, constantly hearing “I need a vacation,” people quitting, the inability to hire - these are all great indicators that something needs to change. Not to mention, if you are building a culture of trust, investing in improving the quality of life for your team is an excellent way to show that your organization truly cares.
 
 The business value here? People want to work on your projects and at your company. On top of that, people who aren’t suffering from burnout work more effectively!
 
@@ -88,8 +88,8 @@ The remarkable thing about the examples above? They yield compounding returns!
 
 Teams that aren’t suffering from pager fatigue and burnout work more effectively. If you improve the reliability of your system, you can afford to take more risks on innovation. Teams that have more time to do feature work, well they do more feature work!
 
-If you take a portion of the wins from this work and re-invest it into back into improving project velocity, you start seeing compounding returns! Do this enough, with similar strategies in the management chain, and you can start seeing a competitive advantage. You can outpace competitors ability to innovate, and do it with less hands-on-deck.
+If you take a portion of the wins from this work and re-invest that time back into improving project velocity, you start seeing compounding returns! Do this enough, with similar strategies in the management chain, and you start seeing a competitive advantage. You can outpace competitors ability to innovate and do it with less hands-on-deck.
 
 # Conclusion
 
-Stop using the phrase “technical debt.” It gets in the way of having proper trade-off conversations about prioritizing important work. Instead, use phrases that frame the work you are doing in terms of the value it delivers to the business! Not only does this help the company prioritize work, it helps you improve the quality of your work experience!
+Stop using the phrase “technical debt.” It gets in the way of having proper trade-off conversations about prioritizing important work. Instead, use phrases that frame the work you are doing in terms of the value it delivers to the business. Not only does this help the company prioritize work, but also it helps you improve the quality of your work experience!
