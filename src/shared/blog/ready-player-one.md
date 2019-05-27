@@ -23,6 +23,4 @@ Yet, the "stakes on the table" for the protagonist in the story is that the evil
 
 This isn't a story about a kid fighting to save a video game. This is a story about a society where the government hasn't regulated away debt traps. The day wasn't saved when the antagonist prevailed. If a company that sells in-game mods is able to run literal _labor camps_, I can't even begin to imagine what the rest of this society looks like.
 
-I live in the states, and this is why I believe is critical for us as citizens to be involved in our democracy. Democracy doesn't just give civilian oversight of our government, it gives civilian oversight of everything. Free markets work, but they only work when paired with significant civilian oversight. Democracy gives us the power to continue advancing human rights, and to prevent a future where we regress to literal _labor camps_ for video game debt.
-
 #### fin
