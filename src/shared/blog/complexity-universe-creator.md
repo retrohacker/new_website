@@ -1,5 +1,5 @@
 @title|Does the complexity of the universe necessitate a creator?
-@created|20190526
+@created|20190426
 
 I was presented with an argument for the existence of a creator this past week. Upon reflection, it's lead me down an interesting train of thought that I've decided to commit to paper. The argument is:
 

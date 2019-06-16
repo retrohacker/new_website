@@ -1,0 +1,10 @@
+{
+  "name": "website-get-atom-000version",
+  "dependencies": {
+    "@architect/data": "^2.1.0",
+    "@architect/functions": "^3.2.0",
+    "feed": "^3.0.0",
+    "glob": "^7.1.4",
+    "markdown-it": "^8.4.2"
+  }
+}

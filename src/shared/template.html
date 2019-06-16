@@ -1,6 +1,7 @@
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="/_static/fontawesome/css/all.min.css"
     <link href="/normalize.css" rel="stylesheet">
     <style>
       body {
@@ -13,6 +14,15 @@
       .name {
         font-size: 2em;
         margin: .5em;
+      }
+
+      .feeds {
+        display: inline;
+        float: right;
+      }
+
+      .feeds a {
+        color: #000000;
       }
 
       .nav {
@@ -56,8 +66,11 @@
       }
 
       .filter {
-        margin-bottom: 1.5em;
         padding-left: 1em;
+      }
+
+      .content .post .post-title {
+        margin-top: 1.5em;
       }
 
       .content .post .post-title a {
@@ -101,15 +114,39 @@
       .content .post {
         border-bottom: solid 4px #073642;
       }
+
+      .license {
+        text-align: center;
+        max-width: 400px;
+        margin: 1em auto;
+      }
+
+      .license img {
+        width: 88px;
+        margin: 10px auto;
+        display: block;
+      }
     </style>
   </head>
   <body>
-    <div class="name">William Blankenship</div>
+    <div class="name">
+      William Blankenship
+      <div class="feeds">
+        <a href="/rss/v2.rss">
+          <i class="fas fa-rss"></i>
+        </a>
+      </div>
+    </div>
     <ul class="nav">
       {{NAV}}
     </ul>
     <div class="content">
       {{CONTENT}}
+      <div class="license">
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+          <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"/></a>
+          This work by <a xmlns:cc="http://creativecommons.org/ns#" href="https://blankenship.io" property="cc:attributionName" rel="cc:attributionURL">William Blankenship</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+      </div>
     </div>
   </body>
 </html>
