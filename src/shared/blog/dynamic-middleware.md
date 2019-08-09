@@ -189,7 +189,7 @@ This is the final run in production copied verbatim from the NodeQuark repositor
         //  case, including it in atlas should be low cost.
         atlas
           .counter('nq.invalidProperty', {
-            property: PROPERTIES_KEY_BODY_PARSER_MAX_BODY_SIZE,
+            property: 'maxBodySize',
             value: String(newMaxBodySize)
           })
           .increment();
