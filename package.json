@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "@architect/architect": "^6.2.4"
+    "@architect/architect": "5"
   }
 }

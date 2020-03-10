@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
-Description: Exported by architect/package@1.2.7 on 2020-03-04T18:13:06.815Z
+Description: Exported by architect/package@1.2.7 on 2020-03-10T03:19:27.296Z
 Resources:
   Website:
     Type: AWS::Serverless::Api
@@ -178,7 +178,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
-      CodeUri: s3://website-cfn-deployments-4fe6b/48f3208a978b7355015862e90a3a6eba
+      CodeUri: s3://website-cfn-deployments-4fe6b/6c7c8640344cfee03b678c410b4a09ed
       Runtime: nodejs12.x
       MemorySize: 1152
       Timeout: 5
@@ -211,7 +211,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
-      CodeUri: s3://website-cfn-deployments-4fe6b/04dc049251b560115715313ce9cbd938
+      CodeUri: s3://website-cfn-deployments-4fe6b/a96d534c942bcc547b7c56807bd73fbf
       Runtime: nodejs12.x
       MemorySize: 1152
       Timeout: 5
@@ -244,7 +244,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
-      CodeUri: s3://website-cfn-deployments-4fe6b/eca4dc9dce3879f40fa251dd864ad7f7
+      CodeUri: s3://website-cfn-deployments-4fe6b/5e450df5b9ed78b7ed8bfe20efae725d
       Runtime: nodejs12.x
       MemorySize: 1152
       Timeout: 5
@@ -277,7 +277,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
-      CodeUri: s3://website-cfn-deployments-4fe6b/e31b623ea17a694f2056b9b27f1aa719
+      CodeUri: s3://website-cfn-deployments-4fe6b/31c2f19c04cacf44d5d9bd052c30d680
       Runtime: nodejs12.x
       MemorySize: 1152
       Timeout: 5
@@ -310,7 +310,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
-      CodeUri: s3://website-cfn-deployments-4fe6b/bd3be8d713f3f0b2de9664da70bf13f7
+      CodeUri: s3://website-cfn-deployments-4fe6b/6877026a0175c09c533e391b7c9f9d2f
       Runtime: nodejs12.x
       MemorySize: 1152
       Timeout: 5
@@ -343,7 +343,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
-      CodeUri: s3://website-cfn-deployments-4fe6b/85867e5432706a947c92485ff1160db1
+      CodeUri: s3://website-cfn-deployments-4fe6b/c622166620ea5c6cdda15aef004448fe
       Runtime: nodejs12.x
       MemorySize: 1152
       Timeout: 5
@@ -376,7 +376,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
-      CodeUri: s3://website-cfn-deployments-4fe6b/bc24d4ecbbca34dc186f13fcc76577a9
+      CodeUri: s3://website-cfn-deployments-4fe6b/890a8c690a8c7ef1c3e5ba44001db4b9
       Runtime: nodejs12.x
       MemorySize: 1152
       Timeout: 5
